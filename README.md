@@ -17,7 +17,8 @@ or clone from
 use Maven (3.0.\*) and Java (1.6 or better):
 
     $ git clone ...
-    $ mvn install -P bootstrap
+    $ mvn install -P bootstrap -Dmaven.javadoc.skip=true verify
+
 
 Use the `bootstrap` profile only the first time - it enables some
 repositories that can't be exposed in the poms by default. You may
